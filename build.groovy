@@ -1,3 +1,3 @@
 def call (string ProjectName, string ImageTag, string DockerHubUser){
-  sh"dockerbuild -t ${ProjectName}, ${ImageTag}, ${DockerHubUser}"
+  sh"docker build -t ${ProjectName}, ${ImageTag}, ${DockerHubUser}"
 }
